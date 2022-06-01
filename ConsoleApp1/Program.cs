@@ -1,19 +1,14 @@
-﻿using System;
-class ProdSum
+﻿// Вычислить расстояние от Земли до Солнца в дюймах
+using System;
+class Inches
 {
     static void Main()
     {
-        int prod;
-        int sum;
-        int i;
-        sum = 0;
-        prod = 1;
-        for (i=1; i <= 10; i++)
-        {
-            sum = sum + i;
-            prod = prod * i;
-        }
-        Console.WriteLine("Сумма равна " + sum);
-        Console.WriteLine("Произведение равно " + prod);
+        long inches;
+        long miles;
+        miles = 93000000; // 93 000 000 мили до солнца
+        // 2 280 футов в миле, 12 дюймов в футе.
+        inches = miles * 5280 * 12;
+        Console.WriteLine("Расстояние до солнца равно " + inches + " Дюймов");
     }
 }
